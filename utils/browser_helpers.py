@@ -43,7 +43,3 @@ def wait_for_element_visible(driver, locator, timeout=10):
     return WebDriverWait(driver, timeout).until(
         EC.visibility_of_element_located(locator)
     )
-
-def safe_scroll_to_element(driver, element):
-    """Безопасная прокрутка к элементу"""
-    driver.execute_script("arguments[0].scrollIntoView();", element)

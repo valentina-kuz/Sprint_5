@@ -81,9 +81,6 @@ pytest -v -s
 - `create_authorized_driver()` - создание авторизованного драйвера
 - `wait_for_element_clickable()` - ожидание кликабельности элемента
 - `wait_for_element_visible()` - ожидание видимости элемента
-- `safe_scroll_to_element()` - безопасная прокрутка к элементу
-
-
 
 ### **test_helpers.py**
 - `wait_for_registration_form()` - ожидание формы регистрации

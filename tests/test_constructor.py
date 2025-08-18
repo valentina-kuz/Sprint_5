@@ -1,7 +1,7 @@
 from locators import MainPageLocators
 from urls import URLS
 from test_data import TextData
-from utils.browser_helpers import wait_for_element_visible, wait_for_element_clickable, safe_scroll_to_element
+from utils.browser_helpers import wait_for_element_visible, wait_for_element_clickable
 
 class TestConstructorPage:
 
@@ -25,8 +25,7 @@ class TestConstructorPage:
         # Ждём, что кнопка "Соусы" станет кликабельной
         sauces_btn = wait_for_element_clickable(driver, MainPageLocators.sauces_btn)
         
-        # Прокручиваем к элементу и кликаем
-        safe_scroll_to_element(driver, sauces_btn)
+        # Кликаем по кнопке - страница автоматически прокрутится к разделу
         sauces_btn.click()
         
         # Проверяем содержимое раздела
@@ -41,8 +40,7 @@ class TestConstructorPage:
         # Ждём, что кнопка "Начинки" станет кликабельной
         toppings_btn = wait_for_element_clickable(driver, MainPageLocators.toppings_btn)
         
-        # Прокручиваем к элементу и кликаем
-        safe_scroll_to_element(driver, toppings_btn)
+        # Кликаем по кнопке - страница автоматически прокрутится к разделу
         toppings_btn.click()
         
         # Проверяем содержимое раздела
